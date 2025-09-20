@@ -27,59 +27,88 @@ content ='''
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TCP/IP Protocol Table</title>
-  <style>
-    table {
-      width: 80%;
-      border-collapse: collapse;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background-color: #2980b9;
-      color: white;
-    }
-    caption {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-  </style>
+    <title>TCP/IP Protocol Table</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        caption {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 15px;
+            background: #ff7eb3;
+            color: white;
+            letter-spacing: 1px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 15px;
+        }
+        th {
+            background: #00c6ff;
+            color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f8ff;
+        }
+        tr:hover {
+            background-color: #ffeaa7;
+            transform: scale(1.02);
+            transition: 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body>
-  <table>
-    <caption>TCP/IP Protocol Suite</caption>
-    <tr>
-      <th>Layer</th>
-      <th>Function</th>
-      <th>Common Protocols</th>
-    </tr>
-    <tr>
-      <td>Application</td>
-      <td>Provides services to user applications</td>
-      <td>HTTP, FTP, SMTP, DNS, DHCP, SNMP</td>
-    </tr>
-    <tr>
-      <td>Transport</td>
-      <td>Reliable or fast data transmission</td>
-      <td>TCP, UDP</td>
-    </tr>
-    <tr>
-      <td>Internet</td>
-      <td>Routing and logical addressing</td>
-      <td>IP, ICMP, ARP, RARP</td>
-    </tr>
-    <tr>
-      <td>Network Access</td>
-      <td>Physical data transmission</td>
-      <td>Ethernet, Wi-Fi, PPP</td>
-    </tr>
-  </table>
+
+    <table>
+        <caption>TCP/IP Protocol Layers</caption>
+        <tr>
+            <th>Layer</th>
+            <th>Functions</th>
+            <th>Examples</th>
+        </tr>
+        <tr>
+            <td>Application Layer</td>
+            <td>User interaction, data formatting, services</td>
+            <td>HTTP, FTP, SMTP, DNS</td>
+        </tr>
+        <tr>
+            <td>Transport Layer</td>
+            <td>Reliable data transfer, flow control</td>
+            <td>TCP, UDP</td>
+        </tr>
+        <tr>
+            <td>Internet Layer</td>
+            <td>Logical addressing, routing</td>
+            <td>IP, ICMP, ARP</td>
+        </tr>
+        <tr>
+            <td>Network Access Layer</td>
+            <td>Physical addressing, data transmission</td>
+            <td>Ethernet, Wi-Fi</td>
+        </tr>
+    </table>
+
 </body>
 </html>
 '''
